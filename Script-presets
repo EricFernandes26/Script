@@ -1,0 +1,22 @@
+!Eric Fernandes Pereira 
+!Data 1/5/2021
+!Esses são presets para se usar em Switch, apenas apague os colchetes <> e digite o que for necessario
+enable
+configure terminal
+hostname <digitar nome exigido exemplo "SW-01">
+banner motd "colar msg da ativadade"      
+
+enable secret <colar senha da atividade>
+
+line console 0
+password <colar senha da atividade>
+login
+
+service password-encryption
+
+end
+wr
+
+
+
+!ADENDO dentro nao apagar as aspas, ali voçê coloca a frase que deseja e nao pode conter palavras acentuadas 
