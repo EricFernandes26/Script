@@ -1,0 +1,30 @@
+!Nome: Eric Fernandes Pereira 
+!Data 27/4/2021
+!Entra no modo EXEC-PRIVILEGIADO
+enable
+
+!Entra no modo de configuração
+configure terminal
+
+!Altera o nome do equipamento para SW-AULA 35 (TROQUE O NOME DE ACORDO COM QUE O SEU EXERCICIO PEDE)
+hostname SW-AULA35
+
+!Cria um banner que será exibido quando o Switch for acessado
+banner motd "Acesso apenas para o Departamneto de TI"
+
+!Cria uma senha para o comando Enable, que utiliza a criptografia Type 5
+enable secret 123
+
+!criptografa todas as senhas de texto plano usando a critografia Type 7  
+service password-encryption
+
+!Cria uma senha de acesso da Console 
+line console 0
+password 1234
+login
+
+!Envia o usuario para o modo para a tela de enable[#], esse comando funciona igual ao comando Ctrl+Z
+end
+
+!salva as configurações
+wr
