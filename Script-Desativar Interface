@@ -1,0 +1,20 @@
+!Eric Fernandes Pereira
+!Data 1/5/2021
+!Este é meu script para DESATIVAR UMA INTERFACE no switch seja no Packet tracer ou em um switch real 
+
+
+enable
+configure terminal 
+!esse fastEthernet 0/2 foi só um exemplo, pode ser qualquer outra porta do switch que for desejada 
+interface fastEthernet 0/2
+shutdown
+end
+
+
+!vai voltar habilitar a porta que foi desativada 
+!(neste caso você pode colar puxando direto da linha de configure terminal)
+enable
+configure terminal
+interface fastEthernet 0/2
+no shutdown 
+end
