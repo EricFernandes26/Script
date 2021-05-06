@@ -1,0 +1,14 @@
+!Eric Fernandes Perira
+!Data: 6/5/2021
+
+!Este scrip é para como Colocar IP em uma Interface
+
+>enable
+#configure terminal
+(config)#interface <nome>
+(config-if)#ip address <ip> <mascara>
+(config-if)#no shutdown
+
+
+!Na hora de colocar a interface voce pode seguir esse exemplo: Interface g0/0
+!Adendo, coloca o ip que fica em Default Gateway. O Default Gateway fica dentro de ip configuration 
