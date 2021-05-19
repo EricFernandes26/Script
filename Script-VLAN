@@ -1,0 +1,34 @@
+!Eric Fernandes Pereira 
+!Data: 19/5/2021
+
+
+
+
+
+! CRIAR UMA VLAN
+
+>enable
+#configure terminal
+(config)#vlan <nº-da-vlan>
+(config-vlan)#name <nome-da-vlan>
+
+
+!COLOCAR UMA INTERFACE EM UMA VLAN (ACCESS)
+
+>enable
+#configure terminal
+(config)#interface <nome-da-interface>
+(config-if)#switchport mode access
+(config-if)#switchport access vlan 10
+
+!adendo troque o numero da vlan se for necessario 
+
+
+!Verificar as VLAN criadas no equipamento 
+
+>enable
+#show vlan brief
+
+
+
+
