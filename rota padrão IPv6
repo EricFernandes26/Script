@@ -1,0 +1,3 @@
+enable
+#config terminal
+(config)#ipv6 route ::0 s0/0/1
