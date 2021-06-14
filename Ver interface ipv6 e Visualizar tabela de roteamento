@@ -1,0 +1,8 @@
+!Ver interface ipv6
+show ipv6 interface brief (para ver as interface de ipv6)
+
+!Visualizar tabela de roteamento
+
+>enable
+#show ip route
+
