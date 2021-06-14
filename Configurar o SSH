@@ -1,0 +1,18 @@
+!Configurar o SSH nas linhas de VTY
+
+>enable
+#configure terminal
+
+!Definir o nome do domínio
+(config)#ip domain-name <nome-do-domínio>
+
+!Gerar a chave de criptografia
+(config)#crypto key generate rsa general-keys modulus <nº-de-bits-da-chave>
+
+!Criar usuário no dispositivo
+(config)#username <nome-do-usuário> privilege <1-15> secret <senha>
+
+!Ativar o SSH nas linhas de VTY
+(config)#line vty 0 15
+(config-line)#transport input ssh
+(config-line)#login local
