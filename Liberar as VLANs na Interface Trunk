@@ -1,0 +1,5 @@
+>enable
+#configure terminal
+(config)#interface <nome-da-interface>
+(config-if)#switchport trunk allowed vlan <lista de vlans separadas por VÍRGULAS>
+        Exemplo: switchport trunk allowed vlan 10,20,30,99
