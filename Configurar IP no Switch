@@ -1,0 +1,4 @@
+>enable
+#configure terminal
+(config)#interface vlan 90
+(config-if)#ip address <endereço> <máscara>
