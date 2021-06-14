@@ -1,0 +1,4 @@
+>enable
+#configure terminal
+(config)#interface <nome-da-interface>                       
+(config-if)#ipv6 address <endereço>/<prefixo>
