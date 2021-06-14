@@ -1,0 +1,6 @@
+!Configurar VLAN Nativa na Interface Trunk
+
+>enable
+#configure terminal
+(config)#interface <nome-da-interface>
+(config-if)#switchport trunk native vlan <nº-da-vlan-nativa>
