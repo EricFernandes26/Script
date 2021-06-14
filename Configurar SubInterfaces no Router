@@ -1,0 +1,7 @@
+>enable
+#configure terminal
+(config)#interface <nome-da-subinterface>
+        Exemplo: interface g0/0.10
+                    Sendo 10 o número da VLAN
+(config-subif)#encapsulation dot1q <nº-da-vlan>
+(config-subif)#ip address <ip> <máscara>
