@@ -1,0 +1,4 @@
+>enable
+#configure terminal
+(config)#line console 0
+(config-line)#login local
