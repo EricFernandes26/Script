@@ -1,0 +1,10 @@
+>enable
+#configure terminal
+(config)#ip route <id-da-rede-de-destino> <máscara-da-rede-de-destino> <ip-do-roteador-que-conhece-a-rede>
+
+
+>enable
+#configure terminal
+(config)#ipv6 route <rede-de-destino>/<prefixo> <ip-do-roteador-que-conhece-a-rede>
+
+
